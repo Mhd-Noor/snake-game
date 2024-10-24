@@ -16,20 +16,26 @@ Custom Graphics: I designed unique graphics for the snake and the fruit, enhanci
 Movement Control: The snake's movement is managed using pygame.KEYDOWN events, allowing smooth directional changes.
 Collision Checking: The game continually checks for collisions with walls and the snake's body to determine if the game is over.
 Sound Effects: Although disabled in the GitHub version due to audio setup issues, I initially included sound effects for when the snake eats fruit. 🔊
-## 📦 How It Works
+## ⚙️ How It Works
 
-The game is structured using object-oriented programming principles with classes to manage different components:
+### SNAKE Class
+This class defines the properties and behaviors of the snake, including:
 
-SNAKE Class: This class defines the properties and behaviors of the snake, including:
-Initialization: The snake's body is represented as a list of Vector2 objects, each holding its coordinates.
-Movement Logic: The move_snake() function updates the position of the snake based on its current direction, utilizing a copy of the body to handle growth.
-Graphics Management: Methods such as update_head_graphics() and update_tail_graphics() handle the dynamic rendering of the snake's head and tail based on its movement.
-FRUIT Class: This class manages fruit generation:
-Random Positioning: The fruit appears at random coordinates on the grid, implemented using random.randint() to ensure variety in gameplay.
-Rendering: The draw_fruit() function uses Pygame to render the fruit on the screen.
-MAIN Class: This orchestrates the game loop:
-Game Update Logic: The update() method calls functions to move the snake, check for collisions, and detect game over conditions.
-Drawing Elements: The draw_elements() function coordinates rendering the grass, snake, and fruit on the screen.
+- **Initialization**: The snake's body is represented as a list of `Vector2` objects, each holding its coordinates.
+- **Movement Logic**: The **`move_snake()`** function updates the position of the snake based on its current direction, utilizing a copy of the body to handle growth.
+- **Graphics Management**: Methods such as **`update_head_graphics()`** and **`update_tail_graphics()`** handle the dynamic rendering of the snake's head and tail based on its movement.
+
+### FRUIT Class
+This class manages fruit generation:
+
+- **Random Positioning**: The fruit appears at random coordinates on the grid, implemented using **`random.randint()`** to ensure variety in gameplay.
+- **Rendering**: The **`draw_fruit()`** function uses Pygame to render the fruit on the screen.
+
+### MAIN Class
+This class orchestrates the game loop:
+
+- **Game Update Logic**: The **`update()`** function calls methods to move the snake, check for collisions, and detect game-over conditions.
+
 ## ⚠️ Note on GitHub
 
 Due to audio configuration issues, the sound functionality may not work when running the code directly on GitHub or similar environments. However, the game runs flawlessly in my local setup where I have the appropriate audio dependencies installed.
