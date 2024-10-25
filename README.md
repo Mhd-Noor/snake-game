@@ -38,7 +38,7 @@ This class orchestrates the game loop:
 
 ## ⚠️ Note on GitHub
 
-Due to audio configuration issues, the sound functionality may not work when running the code directly on GitHub or similar environments. However, the game runs flawlessly in my local setup where I have the appropriate audio dependencies installed.
+Due to audio configuration issues, the sound functionality may not work when running the code directly on GitHub or similar environments. However, the game runs flawlessly in my local setup where I have the appropriate audio dependencies installed. But you can feel free and download the code and run it in your system
 
 Feel free to clone the repository and run the game locally to experience the fun! 🚀
 
